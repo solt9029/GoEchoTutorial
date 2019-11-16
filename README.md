@@ -3,5 +3,7 @@
 ```sh
 ghq get git@github.com:solt9029/GoEchoTutorial.git
 ghq look GoEchoTutorial
-docker-compose up # using realize for hot reload
+cp .env.example .env
+vi .env # edit environment variables here.
+docker-compose up # using realize for hot reload.
 ```
