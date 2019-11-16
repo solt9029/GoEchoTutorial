@@ -1,0 +1,23 @@
+settings:
+  legacy:
+    force: false
+    interval: 0s
+schema:
+- name: GoEchoTutorial
+  path: .
+  commands: 
+    install:
+      status: true
+      method: go build -o ./app.exe
+    run:
+      status: true
+      method: ./app.exe
+  watcher:
+    extensions:
+    - go
+    paths:
+    - /
+    ignored_paths:
+    - .git
+    - .realize
+    - vendor
