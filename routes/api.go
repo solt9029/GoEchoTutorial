@@ -9,5 +9,6 @@ func Init(e *echo.Echo) {
 	g := e.Group("/api")
 	{
 		g.GET("/hello", api.Hello())
+		g.GET("/popper", api.Popper())
 	}
 }
